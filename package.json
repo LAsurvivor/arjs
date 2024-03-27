@@ -1,0 +1,23 @@
+{
+  "name": "ARjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "depsndencies": {
+    "express": "^4.16.4"
+  },
+  "dependencies": {
+    "aframe": "^1.5.0",
+    "express": "^4.19.2"
+  }
+}
