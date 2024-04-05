@@ -1,33 +1,20 @@
 import React from 'react';
+import 'aframe';
+import {Entity, Scene} from 'aframe-react';
 
-const ARScene: React.FC = () => {
-    // HTML content
-    const htmlContent: string = `
-    <!doctype HTML>
-    <html>
-        <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-        <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
-        <body style="margin: 0px; overflow: hidden;">
-            <div>TEST</div>
-            <a-scene embedded arjs>
-                <a-marker preset="hiro">
-                    <a-box position="0 0.5 0" material="color: red;">
-                        <a-animation attribute="rotation"
-                            dur="3000"
-                            to="360 360 0"
-                            repeat="indefinite"
-                            easing="linear">
-                        </a-animation>
-                    </a-box>
-                </a-marker>
-                <a-entity camera></a-entity>
-            </a-scene>
-        </body>
-    </html>`;
+class ARScene extends React.Component {
+    render () {
+        return (
+            <Scene>
+                <Entity geometry={{primitive: 'box'}} material={{color: 'red'}} position={{x: 0, y: 0, z: -5}}/>
+                <Entity particle-system={{preset: 'snow'}}/>
+                <Entity light={{type: 'point'}}/>
+                <Entity gltf-model={{src: 'virtualcity.gltf'}}/>
+                <Entity text={{value: 'Hello, WebVR!'}}/>
+            </Scene>
+        );
+    }
+}
 
-    return (
-        <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
-    );
-};
 
 export default ARScene;
