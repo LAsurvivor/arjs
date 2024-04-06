@@ -4,7 +4,7 @@ import {Entity, Scene} from 'aframe-react';
 
 function ARScene() {
     return (
-        <Scene stats>
+        <Scene>
             <a-assets>
                 <img
                     id="groundTexture"
@@ -16,8 +16,13 @@ function ARScene() {
                     src="https://cdn.aframe.io/a-painter/images/sky.jpg"
                     alt=""
                 />
+                <a-asset-item
+                    id="target"
+                    src="https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/target-stand/model.gltf"></a-asset-item>
             </a-assets>
 
+            <Entity gltf-model="#target"
+                    position={{x: 2, y: 0, z: -3}}/>
             <Entity
                 primitive="a-plane"
                 src="#groundTexture"
@@ -35,12 +40,12 @@ function ARScene() {
                 theta-length="90"
                 width="2048"
             />
-            <Entity
-                geometry={{ primitive: "box" }}
-                material={{ color: "red" }}
-                position={{ x: 0, y: 0, z: -5 }}
-                hello-world
-            />
+            {/*<Entity*/}
+            {/*    geometry={{primitive: "box"}}*/}
+            {/*    material={{color: "red"}}*/}
+            {/*    position={{x: 0, y: 0, z: -5}}*/}
+            {/*    hello-world*/}
+            {/*/>*/}
             <Entity light={{ type: "point" }} />
             <Entity text={{ value: "Hello, WebVR!" }} />
 
@@ -56,7 +61,7 @@ function ARScene() {
                     }}
                 />
             </Entity>
-            <Entity fps-counter position={{ x: 0, y: 0, z: -5 }} />
+            {/*<Entity fps-counter position={{ x: 0, y: 0, z: -5 }} />*/}
         </Scene>
     );
 }
