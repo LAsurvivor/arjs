@@ -19,10 +19,25 @@ function ARScene() {
                 <a-asset-item
                     id="target"
                     src="https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/target-stand/model.gltf"></a-asset-item>
+                <a-asset-item
+                    id="car"
+                    src="https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/race-car/model.gltf"></a-asset-item>
+                <a-asset-item
+                    id="library"
+                    src="https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/library-large/model.gltf"></a-asset-item>
             </a-assets>
-
+            {/*https://market.pmnd.rs/*/}
             <Entity gltf-model="#target"
-                    position={{x: 2, y: 0, z: -3}}/>
+                    position={{x: 2, y: 0, z: -3}}
+            />
+            <Entity gltf-model="#car"
+                    position={{x: -3, y: 0, z: -2}}
+                    rotation="0 -30 0"
+            />
+            <Entity gltf-model="#library"
+                    position={{x: -1, y: 0, z: -5}}
+                    rotation="0 -45 0"
+            />
             <Entity
                 primitive="a-plane"
                 src="#groundTexture"
@@ -49,7 +64,7 @@ function ARScene() {
             <Entity light={{ type: "point" }} />
             <Entity text={{ value: "Hello, WebVR!" }} />
 
-            <Entity primitive="a-camera">
+            <Entity primitive="a-camera" position="0 3 1">
                 <Entity
                     primitive="a-cursor"
                     animation__click={{
