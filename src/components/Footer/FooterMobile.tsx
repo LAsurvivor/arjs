@@ -54,16 +54,9 @@ const FooterMobile = () => {
           </AccordionButton>
           <AccordionPanel pb={4}>
             <VStack spacing={3} fontSize="sm" align="initial">
-              <Link>Eleanor Edwards</Link>
-              <Link>Ted Robertson</Link>
-              <Link>Annette Russell</Link>
-              <Link>Jennie Mckinney</Link>
-              <Link>Gloria Richards</Link>
-              <Link>Philip Jones</Link>
-              <Link>Product</Link>
-              <Link>Colleen Russell</Link>
-              <Link>Marvin Hawkins</Link>
-              <Link>Bruce Simmons</Link>
+              <Link>Nike</Link>
+              <Link>Adidas</Link>
+              <Link>Puma</Link>
             </VStack>
           </AccordionPanel>
         </AccordionItem>

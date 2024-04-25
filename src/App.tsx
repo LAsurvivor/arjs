@@ -23,6 +23,9 @@ const Login = loadable(() => import("./pages/Login"), {
 const Register = loadable(() => import("./pages/Register"), {
   fallback: <ProgressLine />,
 });
+const AR = loadable(() => import("./pages/AR"), {
+  fallback: <ProgressLine />,
+});
 
 const App = () => {
   return (
@@ -35,6 +38,7 @@ const App = () => {
             <Route path="/saved" element={<Saved />} />
             <Route path="/search/:name" element={<SearchResults />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/ar" element={<AR />} />
           </Routes>
         </Container>
         <Routes>

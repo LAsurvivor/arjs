@@ -19,14 +19,14 @@ const ContactDetails = () => {
         spacing={4}
         mb={{ base: 5, sm: 8 }}
       >
-        <HStack spacing={2}>
-          <LocationIcon color="white" size={24} />
-          <Text fontSize="sm">7480 Mockingbird Hill</Text>
-        </HStack>
-        <HStack spacing={2}>
-          <PhoneIcon color="white" size={24} />
-          <Text fontSize="sm">(239) 555-0108</Text>
-        </HStack>
+        {/*<HStack spacing={2}>*/}
+        {/*  <LocationIcon color="white" size={24} />*/}
+        {/*  <Text fontSize="sm">7480 Mockingbird Hill</Text>*/}
+        {/*</HStack>*/}
+        {/*<HStack spacing={2}>*/}
+        {/*  <PhoneIcon color="white" size={24} />*/}
+        {/*  <Text fontSize="sm">(239) 555-0108</Text>*/}
+        {/*</HStack>*/}
       </Stack>
       <HStack spacing={6}>
         <Link>

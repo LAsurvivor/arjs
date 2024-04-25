@@ -34,18 +34,9 @@ const Footer = () => {
           </Heading>
           <Flex>
             <VStack spacing={3} fontSize="sm" align="initial" mr={16}>
-              <Link>Eleanor Edwards</Link>
-              <Link>Ted Robertson</Link>
-              <Link>Annette Russell</Link>
-              <Link>Jennie Mckinney</Link>
-              <Link>Gloria Richards</Link>
-            </VStack>
-            <VStack spacing={3} fontSize="sm" align="initial">
-              <Link>Philip Jones</Link>
-              <Link>Product</Link>
-              <Link>Colleen Russell</Link>
-              <Link>Marvin Hawkins</Link>
-              <Link>Bruce Simmons</Link>
+              <Link>Nike</Link>
+              <Link>Adidas</Link>
+              <Link>Puma</Link>
             </VStack>
           </Flex>
         </Flex>

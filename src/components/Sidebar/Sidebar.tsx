@@ -34,7 +34,7 @@ const Sidebar = () => {
           <AccordionButton py={3} borderRadius="md">
             <Box flex="1" textAlign="left">
               <Heading as="h6" fontSize="sm" fontWeight="semibold">
-                Health and Beauty
+                Sportswear
               </Heading>
             </Box>
             <AccordionIcon color="appBlue.600" mr={1} />
@@ -42,10 +42,10 @@ const Sidebar = () => {
           {/* Children */}
           <AccordionPanel ml={6}>
             <VStack spacing={3} align="initial">
-              <Link>Make up</Link>
-              <Link>Hair Care</Link>
-              <Link>Health Care</Link>
-              <Link>Fragrances</Link>
+              <Link>Jersey</Link>
+              <Link>Pants</Link>
+              <Link>Shoes</Link>
+              <Link>Equipment</Link>
             </VStack>
           </AccordionPanel>
         </AccordionItem>
@@ -55,7 +55,7 @@ const Sidebar = () => {
           <AccordionButton py={3} borderRadius="md">
             <Box flex="1" textAlign="left">
               <Heading as="h6" fontSize="sm" fontWeight="semibold">
-                Home and Office
+                Sporting Goods
               </Heading>
             </Box>
             <AccordionIcon color="appBlue.600" mr={1} />
@@ -63,10 +63,9 @@ const Sidebar = () => {
           {/* Children */}
           <AccordionPanel ml={6}>
             <VStack spacing={3} align="initial">
-              <Link>Office Products</Link>
-              <Link>Large Appliances</Link>
-              <Link>Furniture</Link>
-              <Link>Small Appliances</Link>
+              <Link>Soccer</Link>
+              <Link>Basketball</Link>
+              <Link>Others</Link>
             </VStack>
           </AccordionPanel>
         </AccordionItem>
@@ -76,7 +75,7 @@ const Sidebar = () => {
           <AccordionButton py={3} borderRadius="md">
             <Box flex="1" textAlign="left">
               <Heading as="h6" fontSize="sm" fontWeight="semibold">
-                Phones and Tablets
+                Artwork
               </Heading>
             </Box>
             <AccordionIcon color="appBlue.600" mr={1} />
@@ -84,96 +83,12 @@ const Sidebar = () => {
           {/* Children */}
           <AccordionPanel ml={6}>
             <VStack spacing={3} align="initial">
-              <Link>Mobile Phones</Link>
-              <Link>Tablets</Link>
-              <Link>Mobile Accessories</Link>
+              <Link>Souvenir</Link>
+              <Link>AR Work</Link>
             </VStack>
           </AccordionPanel>
         </AccordionItem>
         {/* 3rd item end */}
-        {/* 4th item start */}
-        <AccordionItem borderTop={border} borderBottom={border}>
-          <AccordionButton py={3} borderRadius="md">
-            <Box flex="1" textAlign="left">
-              <Heading as="h6" fontSize="sm" fontWeight="semibold">
-                Computing
-              </Heading>
-            </Box>
-            <AccordionIcon color="appBlue.600" mr={1} />
-          </AccordionButton>
-          {/* Children */}
-          <AccordionPanel ml={6}>
-            <VStack spacing={3} align="initial">
-              <Link>Computers</Link>
-              <Link>Data Storage</Link>
-              <Link>Computer Accessories</Link>
-              <Link>Printers</Link>
-            </VStack>
-          </AccordionPanel>
-        </AccordionItem>
-        {/* 4th item end */}
-        {/* 5th item start */}
-        <AccordionItem borderTop={border} borderBottom={border}>
-          <AccordionButton py={3} borderRadius="md">
-            <Box flex="1" textAlign="left">
-              <Heading as="h6" fontSize="sm" fontWeight="semibold">
-                Electronics
-              </Heading>
-            </Box>
-            <AccordionIcon color="appBlue.600" mr={1} />
-          </AccordionButton>
-          {/* Children */}
-          <AccordionPanel ml={6}>
-            <VStack spacing={3} align="initial">
-              <Link>Television & Video</Link>
-              <Link>Cameras & Photos</Link>
-              <Link>Home Audio</Link>
-              <Link>Generators & Portable Power</Link>
-            </VStack>
-          </AccordionPanel>
-        </AccordionItem>
-        {/* 5th item end */}
-        {/* 6th item start */}
-        <AccordionItem borderTop={border} borderBottom={border}>
-          <AccordionButton py={3} borderRadius="md">
-            <Box flex="1" textAlign="left">
-              <Heading as="h6" fontSize="sm" fontWeight="semibold">
-                Fashion
-              </Heading>
-            </Box>
-            <AccordionIcon color="appBlue.600" mr={1} />
-          </AccordionButton>
-          {/* Children */}
-          <AccordionPanel ml={6}>
-            <VStack spacing={3} align="initial">
-              <Link>Women's Fashion</Link>
-              <Link>Men's Fashion</Link>
-              <Link>Watches</Link>
-              <Link>Sunglasses</Link>
-            </VStack>
-          </AccordionPanel>
-        </AccordionItem>
-        {/* 6th item end */}
-        {/* 7th item start */}
-        <AccordionItem borderTop={border} borderBottom={border}>
-          <AccordionButton py={3} borderRadius="md">
-            <Box flex="1" textAlign="left">
-              <Heading as="h6" fontSize="sm" fontWeight="semibold">
-                Gaming
-              </Heading>
-            </Box>
-            <AccordionIcon color="appBlue.600" mr={1} />
-          </AccordionButton>
-          {/* Children */}
-          <AccordionPanel ml={6}>
-            <VStack spacing={3} align="initial">
-              <Link>Playstation</Link>
-              <Link>Xbox</Link>
-              <Link>Nintendo</Link>
-            </VStack>
-          </AccordionPanel>
-        </AccordionItem>
-        {/* 7th item end */}
       </Accordion>
       {/* Accordion end */}
     </>
