@@ -38,7 +38,7 @@ const App = () => {
             <Route path="/saved" element={<Saved />} />
             <Route path="/search/:name" element={<SearchResults />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/ar" element={<AR />} />
+            <Route path="/ar/:id" element={<AR />} />
           </Routes>
         </Container>
         <Routes>

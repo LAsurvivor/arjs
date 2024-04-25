@@ -89,7 +89,7 @@ const ProductCard = ({ product }: Props) => {
         </Flex>
         <LinkOverlay
           as={RouterLink}
-          to={`/products/${product.id}`}
+          to={`/ar/${product.id}`}
           className="product-title"
         >
           <Flex direction="column" minH="84px" justify="center">
