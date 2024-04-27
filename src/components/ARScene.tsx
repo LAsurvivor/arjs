@@ -69,14 +69,14 @@ function ARScene() {
             {/*    </Scene>*/}
             {/*</div>*/}
             <div className="ar-container" style={{
-                width: '600px',
-                height: '400px',
+                width: '1800px',
+                height: '1080px',
                 border: '1px solid #ccc',
                 position: 'relative',
                 overflow: 'hidden'
             }}>
                 <a-scene embedded
-                         arjs="sourceType: webcam; debugUIEnabled: false;"
+                         arjs="sourceType: webcam; debugUIEnabled: false; sourceWidth:600; sourceHeight:400; displayWidth: 600; displayHeight: 400; canvasWidth: 600; canvasHeight: 400;"
                 >
                     <a-assets>
                         <a-asset-item
@@ -85,10 +85,23 @@ function ARScene() {
                     </a-assets>
                     <a-marker preset="hiro">
                         <Entity gltf-model="#target"
-                                scale="12 12 12"
+                                scale="24 24 24"
+                                rotation="90 0 0"
+                                position="0 0 0"
                         />
                     </a-marker>
-                    <a-entity camera></a-entity>
+                    <Entity primitive="a-camera">
+                        {/*<Entity*/}
+                        {/*    primitive="a-cursor"*/}
+                        {/*    animation__click={{*/}
+                        {/*        property: "scale",*/}
+                        {/*        startEvents: "click",*/}
+                        {/*        from: "0.1 0.1 0.1",*/}
+                        {/*        to: "1 1 1",*/}
+                        {/*        dur: 150,*/}
+                        {/*    }}*/}
+                        {/*/>*/}
+                    </Entity>
                 </a-scene>
             </div>
         </>
