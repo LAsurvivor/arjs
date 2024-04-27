@@ -1,4 +1,3 @@
-import React from 'react';
 // import 'aframe';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -76,33 +75,21 @@ function ARScene() {
                 position: 'relative',
                 overflow: 'hidden'
             }}>
-                <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+                <a-scene embedded
+                         arjs="sourceType: webcam; debugUIEnabled: false;"
+                >
+                    <a-assets>
+                        <a-asset-item
+                            id="target"
+                            src="https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/right-hand-white-webxr-tracking-ready/model.gltf"></a-asset-item>
+                    </a-assets>
                     <a-marker preset="hiro">
-                        <a-box position="0 0.5 0" rotation="0 45 0" material="color: red;">
-                            {/*<a-animation attribute="rotation"*/}
-                            {/*             dur="3000"*/}
-                            {/*             to="360 360 0"*/}
-                            {/*             repeat="indefinite"*/}
-                            {/*             easing="linear">*/}
-                            {/*</a-animation>*/}
-                        </a-box>
+                        <Entity gltf-model="#target"
+                                scale="12 12 12"
+                        />
                     </a-marker>
                     <a-entity camera></a-entity>
                 </a-scene>
-
-                {/*<Scene embedded arjs='sourceType: webcam;'>*/}
-                {/*    <Entity marker={{ preset: 'hiro' }}>*/}
-                {/*        <Entity geometry={{ primitive: 'box' }} material={{ color: 'red' }} position="0 0.5 0">*/}
-                {/*            <a-animation attribute="rotation"*/}
-                {/*                         dur="3000"*/}
-                {/*                         to="360 360 0"*/}
-                {/*                         repeat="indefinite"*/}
-                {/*                         easing="linear">*/}
-                {/*            </a-animation>*/}
-                {/*        </Entity>*/}
-                {/*    </Entity>*/}
-                {/*    <Entity camera></Entity>*/}
-                {/*</Scene>*/}
             </div>
         </>
     );
