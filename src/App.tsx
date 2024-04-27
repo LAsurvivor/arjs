@@ -29,25 +29,46 @@ const AR = loadable(() => import("./pages/AR"), {
 
 const App = () => {
   return (
-    <Provider>
-      <Router>
-        <Container>
+      <Provider>
+        <Router>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/products/:id" element={<Product />} />
-            <Route path="/saved" element={<Saved />} />
-            <Route path="/search/:name" element={<SearchResults />} />
-            <Route path="/cart" element={<Cart />} />
             <Route path="/ar/:id" element={<AR />} />
+            <Route path="/" element={<Container><Home /></Container>} />
+            <Route path="/products/:id" element={<Container><Product /></Container>} />
+            <Route path="/saved" element={<Container><Saved /></Container>} />
+            <Route path="/search/:name" element={<Container><SearchResults /></Container>} />
+            <Route path="/cart" element={<Container><Cart /></Container>} />
+            <Route path="/login" element={<Container><Login /></Container>} />
+            <Route path="/register" element={<Container><Register /></Container>} />
           </Routes>
-        </Container>
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-        </Routes>
-      </Router>
-    </Provider>
+        </Router>
+      </Provider>
   );
 };
+
+// const App = () => {
+//   return (
+//     <Provider>
+//       <Router>
+//         <Routes>
+//           <Route path="/ar/:id" element={<AR />} />
+//         </Routes>
+//         <Container>
+//           <Routes>
+//             <Route path="/" element={<Home />} />
+//             <Route path="/products/:id" element={<Product />} />
+//             <Route path="/saved" element={<Saved />} />
+//             <Route path="/search/:name" element={<SearchResults />} />
+//             <Route path="/cart" element={<Cart />} />
+//           </Routes>
+//         </Container>
+//         <Routes>
+//           <Route path="/login" element={<Login />} />
+//           <Route path="/register" element={<Register />} />
+//         </Routes>
+//       </Router>
+//     </Provider>
+//   );
+// };
 
 export default App;
